@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>有据 — 记账，要有据</title>
+<meta name="description" content="凭证型记账 App。每笔账绑定截图凭证，对账留底不扯皮。专为自由职业、个体经营、独立接活的人做。">
+<link rel="icon" href="icon.png">
+<style>
+  :root{ --ink:#1c1b2e; --muted:#6b6880; --grad1:#5b50f2; --grad2:#8b4df0; }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  body{ font-family:-apple-system,"PingFang SC","Helvetica Neue",sans-serif; color:var(--ink);
+        line-height:1.7; background:#faf9ff; -webkit-font-smoothing:antialiased; }
+  .wrap{ max-width:760px; margin:0 auto; padding:0 24px; }
+  .hero{ background:linear-gradient(135deg,var(--grad1),var(--grad2)); color:#fff; padding:72px 0 64px; text-align:center; }
+  .hero img{ width:104px; height:104px; border-radius:24px; box-shadow:0 12px 30px rgba(0,0,0,.25); }
+  .hero h1{ font-size:40px; margin:22px 0 6px; letter-spacing:1px; }
+  .hero .slogan{ font-size:17px; opacity:.9; }
+  .hero p{ margin:22px auto 0; max-width:520px; font-size:16px; opacity:.95; }
+  section{ padding:54px 0; }
+  h2{ font-size:24px; margin-bottom:22px; }
+  .cards{ display:grid; gap:16px; }
+  @media(min-width:600px){ .cards{ grid-template-columns:1fr 1fr; } }
+  .card{ background:#fff; border-radius:16px; padding:22px 24px; box-shadow:0 4px 18px rgba(80,60,200,.07); }
+  .card h3{ font-size:17px; margin-bottom:6px; }
+  .card p{ color:var(--muted); font-size:15px; }
+  .support{ background:#fff; }
+  .support .box{ background:#f4f2ff; border-radius:16px; padding:24px; }
+  .support a{ color:var(--grad1); font-weight:600; text-decoration:none; }
+  .faq{ margin-top:20px; }
+  .faq dt{ font-weight:600; margin-top:16px; }
+  .faq dd{ color:var(--muted); margin-top:4px; }
+  footer{ text-align:center; padding:40px 0 56px; color:var(--muted); font-size:14px; }
+  footer a{ color:var(--grad1); text-decoration:none; }
+</style>
+</head>
+<body>
+  <div class="hero">
+    <div class="wrap">
+      <img src="icon.png" alt="有据">
+      <h1>有据</h1>
+      <div class="slogan">记账，要有据</div>
+      <p>凭证型记账 App。每笔账都绑定一张截图凭证，对账、报销、归档全程有据可查——专为自由职业、个体经营、独立接活的人做。</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <h2>它和普通记账有什么不一样</h2>
+      <div class="cards">
+        <div class="card"><h3>凭证是脊柱，不是附件</h3><p>普通记账把截图当可选附件；有据反过来——没截图的账一眼可见、提醒你补。</p></div>
+        <div class="card"><h3>选张截图，自动记账</h3><p>选支付截图，本地识别金额和时间帮你填好，你只确认。不联网、不上传。</p></div>
+        <div class="card"><h3>按项目 / 客户分账</h3><p>甲方A、甲方B、能报销的，打标签一筛即清。</p></div>
+        <div class="card"><h3>应收追踪 + 对账导出</h3><p>记下甲方欠的钱、到期提醒；一键导出带凭证缩略图的对账清单（PDF / Excel）甩给甲方。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="support" id="support">
+    <div class="wrap">
+      <h2>技术支持</h2>
+      <div class="box">
+        <p>使用中遇到问题、有功能建议，欢迎邮件联系，我们会尽快回复：</p>
+        <p style="margin-top:10px;font-size:18px"><a href="mailto:longtide1230@gmail.com">longtide1230@gmail.com</a></p>
+        <dl class="faq">
+          <dt>我的数据安全吗？</dt>
+          <dd>所有账目和截图只存在你手机本地，不联网、不上传、无账号。详见<a href="privacy.html">隐私政策</a>。</dd>
+          <dt>换手机数据会丢吗？</dt>
+          <dd>当前版本为纯本地存储，卸载或换机前请自行备份。云备份在后续版本规划中。</dd>
+          <dt>识别不出金额怎么办？</dt>
+          <dd>识别为辅助，任何字段都可手动修改；账单详情页截图识别更准。</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <a href="privacy.html">隐私政策</a> · <a href="#support">技术支持</a><br>
+      © 2026 有据
+    </div>
+  </footer>
+</body>
+</html>
